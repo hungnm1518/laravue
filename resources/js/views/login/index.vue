@@ -201,7 +201,6 @@ $light_gray:#eee;
   }
   .title {
     font-size: 26px;
-    font-weight: 400;
     color: $light_gray;
     margin: 0px auto 40px auto;
     text-align: center;
@@ -221,6 +220,18 @@ $light_gray:#eee;
     position: absolute;
     top: 40px;
     right: 35px;
+  }
+}
+@media screen and (orientation:landscape) and (max-width:1024px) {
+  .login-container {
+    position: relative;
+    overflow-y: auto;
+    .login-form {
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      margin: auto;
+    }
   }
 }
 </style>
